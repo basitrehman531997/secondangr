@@ -1,0 +1,24 @@
+<div class="container">
+    <label>id</label> 
+    <input type="number" value="id" [(ngModel)]="id" [disabled]="disable" placeholder="id"/>
+    <br>    
+    <label>Name</label>
+    <input type="text" value="name" [(ngModel)]="name" placeholder="plz enter you name"/>
+    <br>
+    <br>
+    <label>price:</label>
+    <input type="number" value="price" [(ngModel)]="price" placeholder="price"/>
+    <br>
+    
+    <br>
+    <div >
+        <button type="submit" class="btn btn-success" (click)="onaddvalue()"  [disabled]="disable">ADD</button>&nbsp;  
+    
+        <button type="submit" class="btn btn-success" (click)="updatevalue()" [disabled]="disbaleup">UPDATE</button>&nbsp;
+
+        <button type="submit" class="btn btn-success" (click)="backtoview()">BACK</button>&nbsp;
+        <!-- <button type="submit" class="btn btn-success" (click)="logoutbtn()">l</button>&nbsp; -->
+    </div>
+   
+   
+    </div>

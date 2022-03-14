@@ -1,0 +1,21 @@
+<p>view works!</p>
+
+<table>
+    <tr *ngFor="let item of user$|async">
+        <td>{{item.name}}</td> &nbsp;
+        <br>
+        <td>{{item.price}}</td> &nbsp;
+        <br>
+        <td>{{item.id}}</td> &nbsp;
+        <br>
+        
+        <button class="btn btn-warning" (click)="onupdate(item)">update</button>
+        <button class="btn btn-danger" (click)="onremove(item.id)">Delete</button>
+        <button class="btn btn-warning" (click)="ondeatils(item.id)">Details</button>
+
+       
+
+        
+    </tr>
+    <button class="btn btn-primary" (click)="onadd()" >add</button>
+</table>
